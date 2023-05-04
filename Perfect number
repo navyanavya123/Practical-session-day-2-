@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+// declaring and initializing the variables
+int number, remainder, sum = 0, j;
+// taking input from the user.
+printf("Enter a number\n");
+scanf("%d", &number);
+// finding all divisors and adding them
+for(j = 1; j < number; j++)  {
+    remainder = number % j;
+       if (remainder == 0)  {
+                sum = sum + j;
+                       }
+      }
+if (sum == number)
+      printf(" Entered number is a Perfect Number");
+else
+      printf("\n %d is not a Perfect Number");
+getch();
+}
